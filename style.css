@@ -1,0 +1,87 @@
+/* style.css */
+
+/* Reset some default styling */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    padding: 0 10px;
+}
+
+/* Style for the main title */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Style for the stopwatch display */
+.hd-1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    gap: 10px;
+}
+
+/* Style for the time units */
+#hour, #minute, #second {
+    display: inline-block;
+    min-width: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Style for the buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Active effect for buttons */
+button:active {
+    background-color: #004085;
+}
+
+/* Media query for tablets and larger phones (min-width: 600px) */
+@media (min-width: 600px) {
+    .hd-1 {
+        font-size: 4rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Media query for larger screens (min-width: 900px) */
+@media (min-width: 900px) {
+    body {
+        padding: 0;
+    }}
+
+ 
